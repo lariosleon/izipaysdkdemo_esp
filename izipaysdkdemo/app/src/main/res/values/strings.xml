@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Izipay Assa Coolbox</string>
+    <string name="pay">Conectar</string>
+    <string name="detailed_report">Reporte de ventas</string>
+    <string name="void_transaction">Void</string>
+    <string name="ref_demo">1520</string>
+    <string name="reprint">Re-Imprimir</string>
+</resources>

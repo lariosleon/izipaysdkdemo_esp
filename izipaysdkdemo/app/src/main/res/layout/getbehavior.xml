@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/BehaviorHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Opciones"
+        android:background="#3c3a3a"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:padding="3sp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsTransactionVoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction void"
+        android:layout_below="@id/BehaviorHeader"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsTransactionQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Query"
+        android:layout_below="@id/SupportsTransactionVoid"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsNegativeSales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Negative Sales"
+        android:layout_below="@id/SupportsTransactionQuery"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsPartialRefund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partial Refund"
+        android:layout_below="@id/SupportsNegativeSales"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsBatchClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BatchClose"
+        android:layout_below="@id/SupportsPartialRefund"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsTipAdjustment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Adjusment"
+        android:layout_below="@id/SupportsBatchClose"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/OnlyCreditForTipAdjustment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit for tip adjustment"
+        android:layout_below="@id/SupportsTipAdjustment"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supports Credit"
+        android:layout_below="@id/OnlyCreditForTipAdjustment"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supports Debit"
+        android:layout_below="@id/SupportsCredit"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/SupportsEBTFoodstamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supports EBT Food Stamp"
+        android:layout_below="@id/SupportsDebit"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancelarBehavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:onClick="onCancelClick"/>
+
+        <Button
+            android:id="@+id/aceptarBehavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:onClick="onAcceptClick" />
+    </LinearLayout >
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/idCobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/transactionData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/textCobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/textTotalTaxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/appextImporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+
+    <Button
+        android:id="@+id/cancelTransaction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onCancelClick"
+        android:text="Cancelar operación"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/appExtAccepted"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onAcceptClick"
+        android:text="Aceptar"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/appExtRefused"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onRefusedClick"
+        android:text="Rechazar"
+        android:textColor="@android:color/black" />
+    
+    <Button
+        android:id="@+id/appExtUnknown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onUnknownClick"
+        android:text="Desconocido"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
